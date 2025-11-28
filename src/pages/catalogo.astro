@@ -1,0 +1,21 @@
+---
+import Navbar from '../components/Navbar.jsx';
+import ProductList from '../components/ProductList.jsx';
+import '../styles/globals.css';
+import { getProducts } from '../lib/data';
+const products = await getProducts();
+---
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Colecciones · Noós Silens</title>
+  </head>
+  <body>
+    <Navbar />
+    <main class="container">
+      <h2 class="section-title">Colecciones</h2>
+      <ProductList products={products} />
+    </main>
+  </body>
+</html>

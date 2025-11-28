@@ -1,0 +1,29 @@
+---
+import Navbar from '../components/Navbar.jsx';
+import Hero from '../components/Hero.jsx';
+import Banner from '../components/Banner.jsx';
+import ProductList from '../components/ProductList.jsx';
+import WhatsAppButton from '../components/WhatsAppButton.jsx';
+import '../styles/globals.css';
+import { getProducts } from '../lib/data';
+
+const products = await getProducts();
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Noós Silens | In Silentio Potentia</title>
+  </head>
+  <body>
+    <Navbar />
+    <main>
+      <Hero />
+      <Banner />
+      <ProductList products={products} />
+    </main>
+
+    <WhatsAppButton />
+  </body>
+</html>

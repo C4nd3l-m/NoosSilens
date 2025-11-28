@@ -1,0 +1,7 @@
+.card{background:#fff;padding:1rem;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.06)}
+.media{height:220px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.media img{height:100%;object-fit:cover}
+.body{padding-top:.75rem}
+.desc{font-size:.9rem;color:#444}
+.meta{display:flex;justify-content:space-between;align-items:center;margin-top:.75rem}
+.whatsapp{text-decoration:none;padding:.4rem .6rem;border-radius:6px;border:1px solid var(--black)}

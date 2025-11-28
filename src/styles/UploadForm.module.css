@@ -1,0 +1,5 @@
+.form{display:flex;flex-direction:column;gap:.6rem;max-width:600px}
+.form label{display:flex;flex-direction:column;font-size:.9rem}
+.preview{max-width:160px;border-radius:8px;margin-top:.5rem}
+button{padding:.6rem 1rem;border-radius:8px;border:none;background:var(--black);color:#fff}
+.note{font-size:.8rem;color:#666}
